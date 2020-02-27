@@ -25,11 +25,11 @@
                 navigator.geolocation.getCurrentPosition(function(position){
                     var pos = {
                         lat: position.coords.latitude, 
-                        long: position.coords.longitude
+                        lng: position.coords.longitude
                     };
                         console.log(pos);
                     informacion.setPosition(pos);
-                    informacion.setContent("HTML");
+                    informacion.setContent("NO ME SALE LA UBICACION");
                     informacion.open(map);
                     map.setCenter(pos);
                 });
