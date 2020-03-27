@@ -16,22 +16,46 @@
         padding: 0;
       }
     </style>
+    <style type="text/css">
+        .mifecha {
+           background-color: #999;
+           padding: 3px;
+           width: 110px;
+           text-align: center;
+           font-family:verdana, arial;
+           font-size: 12pt;
+        }
+        .mifecha .ano{
+           background-color: #339;
+           padding: 2px;
+           font-size: 100%;
+           margin-bottom: 3px;
+           color: #fff;
+           letter-spacing: 3px;
+           font-weight: bold;
+        }
+        .mifecha .dia{
+           background-color: #99f;
+           font-size: 300%;
+           padding: 5px 8px;
+           margin-bottom: 3px;
+           font-weight: bold;
+        }
+        .mifecha .mes{
+           background-color: #339;
+           font-size: 80%;
+           padding: 2px;
+           color: #fff;
+           font-weight: bold;
+        }
+        </style>
   </head>
   <body>
       <div class="container">
           <div class="row bg-danger">
             <h1>Casos de COVID-19 en el mundo al día</h1>
           </div>
-          <div style="float:right;">
-            <script type="text/javascript">
-            //<![CDATA[
-            var  today = new Date();
-            var m = today.getMonth() + 1;
-            var mes = (m < 10) ? '0' + m : m;
-              document.write('Fecha: '+today.getDate(),'/' +mes,'/'+today.getYear());
-            //]]> 
-            </script></div>
-      </div>
+         
     <div id="map"></div>
     <script>
  
@@ -119,5 +143,14 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9_Agxh6M9H0dQYbXQHtewucGOsDxZPYk&callback=iniciaMapa">
     </script>
+    <script>
+        var f=new Date();
+        var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        document.write('<div class="mifecha">');
+        document.write('<div class="ano">' + f.getFullYear() + '</div>');
+        document.write('<div class="dia">' + f.getDate() + '</div>');
+        document.write('<div class="mes">' + meses[f.getMonth()] + '</div>');
+        document.write('</div>');
+        </script>
   </body>
 </html>
