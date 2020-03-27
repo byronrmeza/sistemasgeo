@@ -18,7 +18,7 @@
         padding: 0;
       }
       body{
-            background-color:lightblue;
+            background-color:lightgoldenrodyellow;
         }
     </style>
   </head>
@@ -74,13 +74,13 @@
                                 if(registro.country==marcador.CountryName){
                                     var image = {
                                             url: 'covid-19.png', //ruta de la imagen
-                                            scaledSize: new google.maps.Size(50, 50), //tamaño de la imagen
+                                            scaledSize: new google.maps.Size(30, 30), //tamaño de la imagen
                                             origin: new google.maps.Point(0,0), //origen de la iamgen
                                             //el ancla de la imagen, el punto donde esta marcando, en nuestro caso el centro inferior.
                                             anchor: new google.maps.Point(0, 0) 
                                     };
 
-                                    var información = "<strong>País:</strong> "+ registro.country +"<br><strong>Casos:</strong> " + registro.cases + "<br><strong>Nuevos hoy:</strong> " + registro.todayCases + "<br><strong>Muertes:</strong> " + registro.deaths + "<br><strong>Muertes Hoy:</strong> " + registro.todayDeaths + "<br><strong>Recuperados:</strong> " + registro.recovered + "<br><strong>Activos:</strong> " + registro.active + "<br><strong>Críticos:</strong> " + registro.critical + "<br><strong>Casos por millón:</strong> " + registro.casesPerOneMillion;
+                                    var información = "<h2>País:</h2> "+ registro.country +"<br><strong>Casos:</strong> " + registro.cases + "<br><strong>Nuevos hoy:</strong> " + registro.todayCases + "<br><strong>Muertes:</strong> " + registro.deaths + "<br><strong>Muertes Hoy:</strong> " + registro.todayDeaths + "<br><strong>Recuperados:</strong> " + registro.recovered + "<br><strong>Activos:</strong> " + registro.active + "<br><strong>Críticos:</strong> " + registro.critical + "<br><strong>Casos por millón:</strong> " + registro.casesPerOneMillion;
 
                                     var infowindow = new google.maps.InfoWindow({
                                         content: información
