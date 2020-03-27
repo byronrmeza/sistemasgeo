@@ -22,7 +22,15 @@
           <div class="row bg-danger">
             <h1>Casos de COVID-19 en el mundo al día</h1>
           </div>
-
+          <div style="float:right;">
+            <script type="text/javascript">
+            //<![CDATA[
+            var  today = new Date();
+            var m = today.getMonth() + 1;
+            var mes = (m < 10) ? '0' + m : m;
+              document.write('Fecha: '+today.getDate(),'/' +mes,'/'+today.getYear());
+            //]]> 
+            </script></div>
       </div>
     <div id="map"></div>
     <script>
