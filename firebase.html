@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sistemas Geo-Referenciados</title>
+  <title>Firebase</title>
   <script src="https://kit.fontawesome.com/725910d27b.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="96x96" href="index/favicon-96x96.png">
   <!-- Bootstrap core CSS -->
@@ -35,11 +35,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio
+            <a class="nav-link" href="index.html">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item dropdown" id='dmenu'>
+          <li class="nav-item dropdown active" id='dmenu'>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Primer Parcial
             </a>
@@ -63,56 +63,39 @@
   <div class="container">
 
     <!-- Jumbotron Header -->
-    <header class="jumbotron my-4 align-items-center">
-      <h2 class="display-5">¡Bienvenido a Sistemas Geo-Referenciados!</h2>
-      <p class="lead">En este sitio encontrarás las prácticas realizadas a lo largo del curso Sistemas Geo-Referenciados </p>
-      <a href="https://github.com/byronmeza99/sistemasgeo" target="_blank" class="btn btngit btn-lg text-white center-block">Ir a GitHub <i class="fab fa-github"></i></a>
+    <header class="">
+      <h2 class="display-4 text-center">Firebase</h2>
+      
     </header>
 
     <!-- Page Features -->
+    
     <div class="row text-center">
 
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-6 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="index/img/primero_Mesa de trabajo 1.jpg" alt="">
+          <img class="card-img-top" src="index/img/f1_Mesa de trabajo 1.jpg" alt="">
           <div class="card-body">
-            <h4 class="card-title">Primer Parcial</h4>
-            <p class="card-text">En este parcial se usaron las herramientas HTML5, JavaScript, Google Maps Platform, Firebase, Fetch, entre otras.</p>
+            <p class="card-text">Práctica que permite insertar productos en una base de datos de Firebase, los muestra en una lista y permite eliminarlos.</p>
           </div>
           <div class="card-footer">
-            <a href="primerparcial.html" class="btn btn-warning">Ver más <i class="far fa-eye"></i></a>
+            <a href="firebase/practica1.html" target="_blank" class="btn btn-warning">Ver práctica <i class="far fa-eye"></i></a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-6 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="index/img/construccion.jpg" alt="">
+          <img class="card-img-top" src="index/img/f2_Mesa de trabajo 1.jpg" alt="">
           <div class="card-body">
-            <h4 class="card-title">Segundo Parcial</h4>
-            <p class="card-text">Available soon</p>
+            <p class="card-text">Es una actualización de la práctica 1, ahora muestra la opción de editar el producto.</p>
           </div>
           <div class="card-footer">
+            <a href="firebase/practica2.html" target="_blank"class="btn btn-warning">Ver práctica <i class="far fa-eye"></i></a>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="index/img/construccion.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Tercer Parcial</h4>
-            <p class="card-text">Available soon</p>
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-      </div>
-
-
     </div>
-    <!-- /.row -->
-
   </div>
   <!-- /.container -->
 
@@ -128,12 +111,12 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
-    $('#dmenu').hover(function(){
-    $('#navbarDropdown').trigger('click')
-    //console.log('hover');
-  })
-  </script>
+<script>
+  $('#dmenu').hover(function(){
+	$('#navbarDropdown').trigger('click')
+  //console.log('hover');
+})
+</script>
 </body>
 
 </html>
