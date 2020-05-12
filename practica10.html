@@ -16,10 +16,12 @@ html, body {
             background-color: #1e5945;
         }
     
-        #mapa {
-            width: 100%;
-            height: 640px;
-        }
+        #map {
+
+                width: 100%;
+                height: 340px;
+
+            }
     </style>
 </head>
 <body>
@@ -124,7 +126,7 @@ html, body {
                         navigator.geolocation.clearWatch(watchId);
 
                         const html = `
-                            <p>Se detuvo el monitoreo</p>
+                            <p class="text-white">Finalizaste la transmisión</p>
                         `;
 
                         const datos = document.getElementById('datos');
